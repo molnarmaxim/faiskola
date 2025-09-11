@@ -34,15 +34,3 @@ nav i {
     fill: #2e8b57;
 }
 
-#footer-section {
-    text-align: center;
-    background-color: #385e42;
-    flex: 1;
-
-}
-
-footer{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
