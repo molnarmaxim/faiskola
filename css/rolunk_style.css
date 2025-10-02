@@ -1,0 +1,70 @@
+
+.rolunk-section {
+    padding: 60px 0;
+    background-color: var(--white-bg);
+}
+
+.rolunk-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    gap: 50px; 
+    align-items: flex-start; 
+    margin-top: 40px;
+}
+
+.rolunk-image img {
+    width: 100%;
+    border-radius: var(--border-radius-md); 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    object-fit: cover;
+}
+
+.rolunk-image .image-caption {
+    text-align: center;
+    font-style: italic;
+    color: #777;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.rolunk-text p {
+    font-size: 1.1rem; 
+    line-height: 1.8; 
+    color: #333; 
+    margin-bottom: 1.5rem;
+}
+
+.rolunk-text p:first-of-type::first-letter {
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: var(--primary-color); 
+    float: left;
+    line-height: 0.8;
+    margin-right: 12px;
+    margin-top: 5px;
+}
+
+.rolunk-text blockquote {
+    border-left: 4px solid var(--primary-color);
+    padding-left: 25px;
+    margin: 30px 0;
+    font-size: 1.3rem; 
+    font-style: italic;
+    font-weight: 500;
+    color: var(--secondary-color); 
+}
+
+@media (max-width: 991px) {
+    .rolunk-content {
+        grid-template-columns: 1fr; 
+        gap: 30px;
+    }
+
+    .rolunk-image {
+        max-width: 350px; 
+        margin: 0 auto 20px auto;
+    }
+    .rolunk-text p:first-of-type::first-letter {
+        font-size: 3rem;
+    }
+}

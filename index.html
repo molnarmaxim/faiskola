@@ -8,58 +8,84 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main_style.css">
   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.0/css/all.css"/>
 </head>
 <body>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#"><img src="images/logo.png" width="50" alt=""></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Kezdőlap <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="novenyek.html">Növények</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="rolunk.html">Rólunk</a>
-      </li>
-      <li class="nav-item">
-        <a href="minecraft_novenyek.html" class="nav-link">Minecraft növények</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Termeszvédelem</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" width="50" alt="Termeszvár Faiskola logó">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Kezdőlap <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="novenyek.html">Növények</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="minecraft_novenyek.html" class="nav-link">Minecraft növények</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="rolunk.html">Rólunk</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Természetvédelem</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-      <!-- tartalom -->
-    <div class="introduction">
-        <img src="images/logo.png" width="140" alt="">
-        <div class="description">
-              <p class="text">"Lakiteleki faiskolánkat 2007-ben indíottuk útnak, mely azóta is nagy sikerrel működik. Megtalálhatóak nálunk fák, a legszimplább almafától a legegzotikusabb pénzfáig." - Kovács Zoltán | Kisiparos fakitermelő </p>
-            <img src="images/tree-1.jpg" width="450" alt="Fa">
-        </div>
-    </div>
+    <main>
+        <section class="hero text-center">
+            <div class="container">
+                <img src="images/logo.png" width="200" alt="Termeszvár Faiskola logó" class="logo">
+            </div>
+        </section>
 
-    <div class="reviews">
-      <h3>Rólunk mondták</h3>
-      <p>⭐⭐⭐⭐⭐<br>A lehető legszebb fát vettem tőlük! 😍<br>Barna Bucsú</p>
-    </div>
+        <section class="container">
+            <div class="content-card">
+                <div class="text">
+                    <blockquote>
+                        "Lakiteleki faiskolánkat 2007-ben indítottuk útnak, mely azóta is nagy sikerrel működik. Megtalálhatóak nálunk fák, a legszimplább almafától a legegzotikusabb pénzfáig."
+                    </blockquote>
+                    <cite>Kovács Zoltán | Kisiparos fakitermelő</cite>
+                </div>
+                <img src="images/tree-1.jpg" alt="Virágzó fa a domboldalon">
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="testimonial-card">
+                <h3>Rólunk mondták</h3>
+                <div class="stars">★★★★★</div>
+                <p class="quote">"A lehető legszebb fát vettem tőlük! 😍"</p>
+                <p class="author">Barna Bucsú</p>
+            </div>
+        </section>
+    </main>
 
     <footer class="footer">
         <div class="footer-content">
-            <div class="footer-text">
-                <p class="footer-text">2025 Termeszvár bt. | Csokonai utca 6.  | Lakitelek 6065 <br>  Időpont foglalás: +36 70 725 7247</p>
-            </div>
-
+            <p class="footer-text">
+                2025 Termeszvár bt. | Csokonai utca 6. | Lakitelek 6065<br>
+                Időpont foglalás: +36 70 725 7247
+            </p>
         </div>
     </footer>
-<script src="js/main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
 </html>
