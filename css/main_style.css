@@ -214,3 +214,169 @@ h1, h2, h3 {
         text-align: center;
     }
 }
+
+
+/* --- Vélemények szekció (Reviews) --- */
+.reviews-section {
+    padding: 60px 0;
+    background: var(--light-gray-bg);
+}
+
+.reviews-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+/* Görgethető konténer */
+.reviews-wrapper {
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 20px 0;
+    margin: 0 -15px;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+/*Scrollbar stílusok */
+.reviews-wrapper::-webkit-scrollbar {
+    height: 8px;
+}
+
+.reviews-wrapper::-webkit-scrollbar-track {
+    background: #e0e0e0;
+    border-radius: 10px;
+}
+
+.reviews-wrapper::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 10px;
+}
+
+.reviews-wrapper::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+}
+
+/* Belső konténer a kártyáknak */
+.reviews-container {
+    display: flex;
+    gap: 30px;
+    padding: 0 15px;
+    min-width: min-content;
+
+}
+
+/* Review kártya */
+.review-card {
+    background: var(--white-bg);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow);
+    padding: 30px;
+    min-width: 350px;
+    max-width: 350px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Felhasználó info szekció */
+.review-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.review-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary-color);
+}
+
+.review-user-info h4 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.review-date {
+    font-size: 0.85rem;
+    color: #888;
+    margin: 3px 0 0 0;
+}
+
+/* Csillagok */
+.review-stars {
+    color: #f9c542;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+/* Vélemény szöveg */
+.review-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Opcionális kép a véleményhez */
+.review-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: var(--border-radius-sm);
+    margin-top: 15px;
+}
+
+/* Görgetés jelző (opcionális) */
+.scroll-indicator {
+    text-align: center;
+    margin-top: 20px;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.scroll-indicator i {
+    margin-left: 8px;
+    animation: scroll-hint 1.5s infinite;
+}
+
+@keyframes scroll-hint {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+}
+
+/* --- Reszponzív stílusok --- */
+@media (max-width: 768px) {
+    .reviews-section h2 {
+        font-size: 2rem;
+    }
+
+    .review-card {
+        min-width: 300px;
+        max-width: 300px;
+        padding: 20px;
+    }
+
+    .review-avatar {
+        width: 50px;
+        height: 50px;
+    }
+
+    .review-user-info h4 {
+        font-size: 1rem;
+    }
+}
