@@ -4,6 +4,9 @@
     --warning-color: #e67e22;
     --danger-color: #c0392b;
 }
+body {
+    background-color: #eaf6ec;
+}
 
 /* Hero szekció */
 .hero h1 {
