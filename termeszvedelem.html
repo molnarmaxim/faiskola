@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termeszvédelem - Faiskola</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main_style.css">
+    <link rel="stylesheet" href="css/termeszvedelem.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.0/css/all.css"/>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" width="50" alt="Termeszvár Faiskola logó">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Kezdőlap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="novenyek.html">Növények</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="minecraft_novenyek.html" class="nav-link">Minecraft növények</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="rolunk.html">Rólunk</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="termeszvedelem.html">Termeszvédelem <span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Termeszvédelem</h1>
+                <p class="lead">Védje meg növényeit a kártevőktől és betegségektől</p>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="content-card">
+                <div class="text">
+                    <h2>Miért fontos a termeszvédelem?</h2>
+                    <p>
+                        A növények egészsége kulcsfontosságú a szép és produktív kert fenntartásához. 
+                        Kártevők és betegségek komoly károkat okozhatnak fáinkban és növényeinkben, 
+                        ezért fontos az időben történő felismerés és kezelés.
+                    </p>
+                    <p>
+                        Faiskolánkban szakértői tanácsadással segítünk megtalálni a legmegfelelőbb 
+                        védekezési módszereket az Ön növényei számára.
+                    </p>
+                </div>
+                <img src="images/szarado_falevel.jpeg" alt="száradó falevél">
+            </div>
+        </section>
+
+        <section class="container mt-5">
+            <h2 class="text-center mb-5">Gyakori kártevők és betegségek</h2>
+            
+            <div class="pest-grid">
+                <!-- Levéltetű -->
+                <div class="pest-card">
+                    <div class="pest-icon danger">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3>Levéltetű</h3>
+                    <div class="pest-info">
+                        <p><strong>Felismerés:</strong> Apró, puha testű rovarok a levelek alsó oldalán, ragacsos nyomokat hagynak.</p>
+                        <p><strong>Károsítás:</strong> Kiszívják a növénynedveket, gyengítik a növényt, vírusokat terjeszthetnek.</p>
+                        <p><strong>Védekezés:</strong> Természetes ellenségek (katicabogár), permetezés szappanos vízzel vagy növényvédő szerrel.</p>
+                    </div>
+                </div>
+
+                <!-- Varasodás -->
+                <div class="pest-card">
+                    <div class="pest-icon warning">
+                        <i class="fas fa-disease"></i>
+                    </div>
+                    <h3>Varasodás</h3>
+                    <div class="pest-info">
+                        <p><strong>Felismerés:</strong> Barna, korszerű foltok a leveleken és gyümölcsökön.</p>
+                        <p><strong>Károsítás:</strong> Csökkenti a termés minőségét, súlyos esetben lehullhat a lombozat.</p>
+                        <p><strong>Védekezés:</strong> Fungicidek tavasszal, érintett részek eltávolítása, megfelelő metszés.</p>
+                    </div>
+                </div>
+
+                <!-- Monília -->
+                <div class="pest-card">
+                    <div class="pest-icon danger">
+                        <i class="fas fa-apple-whole"></i>
+                    </div>
+                    <h3>Monília (gyümölcsfoltosodás)</h3>
+                    <div class="pest-info">
+                        <p><strong>Felismerés:</strong> Barna, rothadó foltok a gyümölcsön, fehér penészgyűrűk.</p>
+                        <p><strong>Károsítás:</strong> Tönkreteszi a termést, fertőzi a szomszédos gyümölcsöket.</p>
+                        <p><strong>Védekezés:</strong> Érintett gyümölcsök eltávolítása, gombaölő szerek alkalmazása.</p>
+                    </div>
+                </div>
+
+                <!-- Pajzstetű -->
+                <div class="pest-card">
+                    <div class="pest-icon warning">
+                        <i class="fas fa-shield"></i>
+                    </div>
+                    <h3>Pajzstetű</h3>
+                    <div class="pest-info">
+                        <p><strong>Felismerés:</strong> Kis, kemény pajzsszerű képződmények az ágakon és leveleken.</p>
+                        <p><strong>Károsítás:</strong> Gyengíti a növényt, sárgulást okoz, csökkenti a növekedést.</p>
+                        <p><strong>Védekezés:</strong> Mechanikus eltávolítás, olajpermet télen, szisztémás szerek.</p>
+                    </div>
+                </div>
+
+                <!-- Lisztharmat -->
+                <div class="pest-card">
+                    <div class="pest-icon warning">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Lisztharmat</h3>
+                    <div class="pest-info">
+                        <p><strong>Felismerés:</strong> Fehér, lisztes bevonat a leveleken, hajtásokon.</p>
+                        <p><strong>Károsítás:</strong> Gátolja a fotoszintézist, deformálja a növényi részeket.</p>
+                        <p><strong>Védekezés:</strong> Kénes készítmények, gombaölő szerek, fertőzött részek eltávolítása.</p>
+                    </div>
+                </div>
+
+                <!-- Almamoly -->
+                <div class="pest-card">
+                    <div class="pest-icon danger">
+                        <i class="fas fa-worm"></i>
+                    </div>
+                    <h3>Almamoly</h3>
+                    <div class="pest-info">
+                        <p><strong>Felismerés:</strong> Kukacok a gyümölcsben, rágásnyomok, korán lehulló gyümölcsök.</p>
+                        <p><strong>Károsítás:</strong> Elrontja a termést, kukaclyukak a gyümölcsökben.</p>
+                        <p><strong>Védekezés:</strong> Feromoncsapdák, permetezés megfelelő időben, érintett gyümölcsök összegyűjtése.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mt-5">
+            <div class="prevention-section">
+                <h2 class="text-center mb-4">Megelőzési tippek</h2>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <i class="fas fa-scissors"></i>
+                        <h4>Rendszeres metszés</h4>
+                        <p>A jó légáramlás csökkenti a betegségek kialakulását</p>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fas fa-droplet"></i>
+                        <h4>Megfelelő öntözés</h4>
+                        <p>Kerülje a túlöntözést és a levelek nedvesítését</p>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fas fa-broom"></i>
+                        <h4>Tisztaság</h4>
+                        <p>Távolítsa el a lehullott leveleket és beteg növényi részeket</p>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fas fa-seedling"></i>
+                        <h4>Ellenálló fajták</h4>
+                        <p>Válasszon betegségeknek ellenálló növényeket</p>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fas fa-rotate"></i>
+                        <h4>Váltógazdálkodás</h4>
+                        <p>Ne ültessen azonos növényeket ugyanoda éveken át</p>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fas fa-eye"></i>
+                        <h4>Rendszeres ellenőrzés</h4>
+                        <p>Hetente vizsgálja meg növényeit a korai felismerésért</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mt-5 mb-5">
+            <div class="contact-section">
+                <h2>Segíthetünk?</h2>
+                <p>Ha kérdése van a termeszvédelemmel kapcsolatban, vagy tanácsra van szüksége, keressen minket bizalommal!</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+36 70 725 7247</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-location-dot"></i>
+                        <span>Csokonai utca 6., Lakitelek 6065</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">
+                2025 Termeszvár bt. | Csokonai utca 6. | Lakitelek 6065<br>
+                Időpont foglalás: +36 70 725 7247
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
