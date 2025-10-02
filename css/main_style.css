@@ -63,8 +63,9 @@ h1, h2, h3 {
 }
 
 .hero img.logo {
-    max-width: 120px;
+    max-width: 220px;
     margin-bottom: 1rem;
+    margin: 0;
 }
 
 /* --- Tartalom kártya --- */
@@ -77,6 +78,7 @@ h1, h2, h3 {
     border-radius: var(--border-radius-md);
     box-shadow: var(--shadow);
     margin-top: 2rem;
+    margin-bottom: 20px;
 }
 
 .content-card img {
