@@ -267,3 +267,10 @@ h1, h2, h3 {
     margin-right: 200px;
     margin-top: 20px;
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
