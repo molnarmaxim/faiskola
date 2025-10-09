@@ -30,7 +30,7 @@ main {
 }
 
 .main-content {
-    background: url('/images/bg-min.png');
+    background: url('..\images\background.png');
     margin-top: 0;
     margin-bottom: 20px;
     padding: 0;
