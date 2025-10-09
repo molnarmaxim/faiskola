@@ -33,7 +33,7 @@ main {
     margin-top: 0;
     margin-bottom: 20px;
     padding: 0;
-    height: 80vh;
+    min-height: 80vh;
     background-size: cover;
 }
 
@@ -204,16 +204,34 @@ h1, h2, h3 {
 }
 
 @media (max-width: 768px) {
+    .main-content {
+        min-height: auto;
+        padding-bottom: 20px;
+    }
+
+    .hero {
+        padding: 20px 0;
+    }
+
+    .hero img.logo {
+        max-width: 150px;
+    }
+
     .content-card {
         flex-direction: column;
         padding: 20px;
         text-align: center;
+        margin-top: 1rem;
     }
 
     .content-card img {
         width: 100%;
         max-width: 300px;
         margin-top: 20px;
+    }
+
+    .content-card .text {
+        font-size: 1rem;
     }
 
     .content-card .text blockquote {
@@ -374,13 +392,27 @@ h1, h2, h3 {
 
 /* --- Reszponzív stílusok --- */
 @media (max-width: 768px) {
+    .reviews-section {
+        padding: 40px 0;
+    }
+
     .reviews-section h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+
+    .reviews-wrapper {
+        margin: 0 -10px;
+    }
+
+    .reviews-container {
+        gap: 20px;
+        padding: 0 10px;
     }
 
     .review-card {
-        min-width: 300px;
-        max-width: 300px;
+        min-width: 280px;
+        max-width: 280px;
         padding: 20px;
     }
 
@@ -391,5 +423,42 @@ h1, h2, h3 {
 
     .review-user-info h4 {
         font-size: 1rem;
+    }
+
+    .review-text {
+        font-size: 0.95rem;
+    }
+
+    .review-image {
+        height: 150px;
+    }
+
+    .scroll-indicator {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero img.logo {
+        max-width: 120px;
+    }
+
+    .content-card {
+        padding: 15px;
+        margin-top: 0.5rem;
+    }
+
+    .content-card .text {
+        font-size: 0.95rem;
+    }
+
+    .reviews-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .review-card {
+        min-width: 260px;
+        max-width: 260px;
+        padding: 15px;
     }
 }
