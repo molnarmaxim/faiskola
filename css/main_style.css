@@ -34,6 +34,7 @@ main {
     margin-top: 0;
     margin-bottom: 20px;
     padding: 0;
+    height: 80vh;
     background-size: cover;
 }
 
