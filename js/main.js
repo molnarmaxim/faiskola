@@ -24,7 +24,13 @@ document.addEventListener('DOMContentLoaded', function() {
       }, 500);
     }
     
-    // Videó végeztével megjelenik a lebegő verzió
+    // Automatikusan eltűnik 3 másodperc után
+    setTimeout(function() {
+      video.pause();
+      showFloatingVideo();
+    }, 3000); // 3 másodperc
+    
+    // Videó végeztével is megjelenik a lebegő verzió (ha korábban véget ér)
     video.addEventListener('ended', showFloatingVideo);
     
     // Ha valaki rákattint az overlay-re, megjelenik a lebegő verzió
