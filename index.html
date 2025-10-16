@@ -16,12 +16,21 @@
     <!-- Üdvözlő videó overlay -->
     <div id="video-overlay" class="video-overlay">
         <div class="video-container">
-            <video id="welcome-video" autoplay muted playsinline>
+            <video id="welcome-video" autoplay muted playsinline loop>
                 <source src="images/udvozles.mp4" type="video/quicktime">
                 <source src="images/udvozles.mp4" type="video/mp4">
                 A böngésződ nem támogatja a videó lejátszást.
             </video>
         </div>
+    </div>
+
+    <!-- Lebegő videó widget -->
+    <div id="floating-video" class="floating-video" style="display: none;">
+        <button class="close-floating" id="close-floating">✕</button>
+        <video id="floating-video-player" autoplay muted playsinline loop>
+            <source src="images/udvozles.mp4" type="video/quicktime">
+            <source src="images/udvozles.mp4" type="video/mp4">
+        </video>
     </div>
 
     <header class="header">
