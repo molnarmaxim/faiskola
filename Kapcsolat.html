@@ -11,8 +11,18 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/kapcsolat.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.0/css/all.css"/>
+    <link rel="stylesheet" href="css/main_style.css">
 </head>
 <body>
+    <!-- Lebegő videó widget -->
+    <div id="floating-video" class="floating-video" style="display: none;">
+        <button class="close-floating" id="close-floating">✕</button>
+        <video id="floating-video-player" autoplay muted playsinline loop>
+            <source src="images/udvozles.mp4" type="video/quicktime">
+            <source src="images/udvozles.mp4" type="video/mp4">
+        </video>
+    </div>
+
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
             <div class="container">
@@ -54,8 +64,9 @@
         <input type="text" id="name" name="name" placeholder="Név" required>
         <input type="email" id="email" name="email" placeholder="Email" required>
         <textarea id="comment" name="comment" placeholder="Vélemény..." rows="5" required></textarea>
-        <button type="submit">Küldés</button>
+        <button onclick="alert('Nem vagyunk kiváncsiak a véleményedre, tehát nem küldheted el :c')" type="submit">Küldés</button>
     </form>
 
+    <script src="js/floating-video.js"></script>
 </body>
 

@@ -1,12 +1,11 @@
-// Üdvözlő videó kezelése - minden betöltésnél megjelenik
+// Üdvözlő videó kezelése - minden betöltésnél megjelenik (csak index.html-en)
 document.addEventListener('DOMContentLoaded', function() {
   const videoOverlay = document.getElementById('video-overlay');
   const video = document.getElementById('welcome-video');
   const floatingVideo = document.getElementById('floating-video');
   const floatingVideoPlayer = document.getElementById('floating-video-player');
-  const closeFloating = document.getElementById('close-floating');
   
-  if (video && videoOverlay) {
+  if (video && videoOverlay && floatingVideo) {
     // Biztosítjuk, hogy az overlay látható és a videó az elején van
     videoOverlay.style.display = 'flex';
     videoOverlay.classList.remove('fade-out');
@@ -32,25 +31,6 @@ document.addEventListener('DOMContentLoaded', function() {
     videoOverlay.addEventListener('click', function() {
       video.pause();
       showFloatingVideo();
-    });
-    
-    // Lebegő videó bezárása
-    if (closeFloating) {
-      closeFloating.addEventListener('click', function(e) {
-        e.stopPropagation();
-        floatingVideo.style.display = 'none';
-        floatingVideoPlayer.pause();
-      });
-    }
-    
-    // Lebegő videóra kattintva újra teljes képernyőre
-    floatingVideo.addEventListener('click', function() {
-      floatingVideo.style.display = 'none';
-      floatingVideoPlayer.pause();
-      videoOverlay.style.display = 'flex';
-      videoOverlay.classList.remove('fade-out');
-      video.currentTime = 0;
-      video.play();
     });
   }
 });

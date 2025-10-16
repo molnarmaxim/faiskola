@@ -10,8 +10,18 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.0/css/all.css"/>
+    <link rel="stylesheet" href="css/main_style.css">
 </head>
 <body>
+    <!-- Lebegő videó widget -->
+    <div id="floating-video" class="floating-video" style="display: none;">
+        <button class="close-floating" id="close-floating">✕</button>
+        <video id="floating-video-player" autoplay muted playsinline loop>
+            <source src="images/udvozles.mp4" type="video/quicktime">
+            <source src="images/udvozles.mp4" type="video/mp4">
+        </video>
+    </div>
+
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
             <div class="container">
@@ -111,5 +121,6 @@
       </div>
     </div>
     
+    <script src="js/floating-video.js"></script>
 </body>
 </html>
